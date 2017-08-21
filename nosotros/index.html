@@ -4,28 +4,68 @@
     <meta charset="UTF-8">
     <title>Climatix</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <!--llamado a pagina www.w3schools.com-->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!--llamado a la hoja de estilo-->
-    <link rel="stylesheet" href="nosotro.css">
+    <link rel="stylesheet" href="nosotros.css">
+     <!--esto proviene del plugins https://daneden.github.io/animate.css/ -->
     <link rel="stylesheet" href="animate.css">
 
     <!--llamado a paginas para dar estilo a la tabla bootstrap-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/font-awesome.css">
-    <!--esto proviene del plugins https://daneden.github.io/animate.css/ -->
-    <link rel="stylesheet" href="css/animate.css">
+   
 
     <script src="js/jquery-3.1.0.min.js"></script>
     <script src="js/main.js"></script>
+
+    <!--boostrap para menu llamado por url-->
+
+
+
 </head>
+<style>
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.contacto div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
 <body>
 <header>
-    <div class="contenedor">
+
+<nav class="navbar navbar-inverse bg-inverse">
+      <div class="contenedor">
         <h1 class="icon-dog">Climatix</h1>
         <input type="checkbox" id="menu-bar">
         <label class="fontawesome-align-justify" for="menu-bar"></label>
@@ -36,15 +76,17 @@
                     <a href="#contacto">Contacto</a>
                 </nav>
     </div>
+</nav>
+
 </header>
 
         <main>
 <!--Inicio de Slider-->
-
+<section class="banner">
             <div class="slideshow" id="slideshow">
         <ul class="slider">
             <li>
-                <img src="../img/arandanos.jpg" alt="">
+                <img src="../img/arandanos1.png" alt="">
                 <section class="caption">
                     <h1 class="animated flash">Anticipate a las heladas</h1>
                     <p class="animated fadeInLeftBig">Previene perdidas de tus productos.</p>
@@ -60,23 +102,19 @@
             <li>
                 <img src="../img/riego.jpg" alt="">
                 <section class="caption">
-                    <h1 class="animated bounceInLeft">No desperdicies agua</h1>
+                    <h1 class="animated bounceInLeft">Ahorra mucho más agua</h1>
                     <p class="animated bounceInDown">Te ayudamos a ahorrar lo maximo posible</p>
                 </section>
             </li>
             <li>
-                <img src="../img/viña.png" alt="">
+                <img src="../img/viña.jpg" alt="">
                 <section class="caption">
-                    <h1 class="animated wobble">Lorem ipsum 4</h1>
-                    <p class="animated jello">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quis ipsa, id quidem quisquam unde.</p>
+                    <h1 class="animated wobble">Mejora la produccion de tus materias primas</h1>
+                    <p class="animated jello">Climatix tiene la clave.</p>
                 </section>
             </li>
         </ul>
 
-        <ol class="pagination">
-            
-        </ol>
-    
         <div class="left">
             <span class="fa fa-chevron-left"></span>
         </div>
@@ -85,16 +123,15 @@
             <span class="fa fa-chevron-right"></span>
         </div>
 
-    </div>      
+    </div>    
+</section>  
 <!--Cierre de Slider-->     
-
+<br><br><br><br><br>
 <section id="nosotros">
-                        
-              
-
-<div class="container">
+        <br><br><br>              
+<div class="w3-container">
         <center>  <h2>¿QUE HACEMOS?</h2>  </center>
-  <table class="table table-striped table-responsive table-hover">
+  <table class="w3-table w3-striped w3-bordered">
     <thead>
       <tr>
         <th><h4><strong>Agricultura</strong></h4></th>
@@ -178,6 +215,7 @@
             </section>
 
         <section id="cliente">
+        <br><br>
             <div class="contenedor">
                 <center><h2>NUESTROS CLIENTES</h2></center>
                                 <div class="contenedor">
@@ -206,62 +244,28 @@
 
         <footer id="contacto">
 
-
 <section id="info" ">
-
-                     
+              
 <h2>Contacto</h2>
-                            
-                     
-<form id="contacto" action="#" method="post" >
 
+<div class="contacto">
+  <form action="/action_page.php">
+    <label for="fname">Nombre Completo</label>
+    <input type="text" id="fname" name="firstname" placeholder="Ingrese su Nombre">
 
-<div class="contenedor">
+    <label for="lname">Correo Electronico</label>
+    <input type="text" id="lname" name="lastname" placeholder="Ingrese su Correo">
 
-  <div class="col-lg-5">
-    <div class="input-group">
-      <span class="glyphicon glyphicon-user">
-      <label for="">Nombre</label>
-      </span>
-      <input type="text" class="form-control" >   
-    </div>
-  </div>
-
-  <div class="col-lg-5">
-    <div class="input-group">
-      <span class="glyphicon glyphicon-envelope">
-          <label for="">E-mail</label>
-      </span>
-      <input type="text" class="form-control" >
-    </div>
-  </div>
-
-    <div class="col-lg-5">
-    <div class="input-group">
-      <span class="glyphicon glyphicon-earphone">
-          <label for="">Telefono</label>
-      </span>
-      <input type="text" class="form-control" >
-    </div>
-  </div>
-
-<div class="col-lg-5">
-    <div class="input-group">
-      <span class="glyphicon glyphicon-pencil">
-          <label for="">Mensaje</label>
-      </span>
-      <input type="textarea" class="form-control" >
-    </div>
-  </div>
-
- <div class="col-lg-5 "><br>
-  <button type="submit" id="enviar" class="btn btn-danger btn-lg btn-block" data-toggle="tooltip" title="Enviar Información"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Enviar</button>
+    <label for="country">Telefono</label>
+    <input type="text" id="lname" name="lastname" placeholder="Ingrese su Telefono">
+    
+    <label for="country">Mensaje</label>
+    <input type="text" id="lname" name="lastname" placeholder="Ingrese su consulta">
+  
+    <input type="submit" value="Enviar">
+  </form>
 </div>
-
-</div>
-
-                                        
-        </form>
+                          
     
                 </section>
 
