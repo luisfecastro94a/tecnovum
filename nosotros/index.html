@@ -8,7 +8,7 @@
     <!--llamado a pagina www.w3schools.com-->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!--llamado a la hoja de estilo-->
-    <link rel="stylesheet" href="nosotros.css">
+    <link rel="stylesheet" href="nosotro.css">
      <!--esto proviene del plugins https://daneden.github.io/animate.css/ -->
     <link rel="stylesheet" href="animate.css">
 
@@ -60,6 +60,22 @@ input[type=submit]:hover {
     background-color: #f2f2f2;
     padding: 20px;
 }
+/*ol {
+    background: #ff9999;
+    padding: 20px;
+}
+.lista {
+    background: #DEE8EC;
+    padding: 20px;
+}
+
+
+.lista li {
+    background: #ADB4B7;
+    margin: 5px;
+}
+*/
+
 </style>
 <body>
 <header>
@@ -117,7 +133,7 @@ input[type=submit]:hover {
             <li>
                 <img src="../img/grafico.jpg" alt="">
                 <section class="caption">
-                    <strong><h1 class="animated rollIn">Obten tus propios resultados</h1></strong>
+                    <strong><h1 class="animated rollIn">Conectado con tu negocio</h1></strong>
                     <p class="animated jackInTheBox">Podras ver los estados de año a año.</p>
                 </section>
             </li>
@@ -132,46 +148,31 @@ input[type=submit]:hover {
         </div>
 
     </div>    
+    <br>
 </section>  
 <!--Cierre de Slider-->     
-<br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br>
 
 <section id="nosotros">
-        <br><br><br>              
-<div class="w3-container">
-        <center>  <h2>¿QUE HACEMOS?</h2>  </center>
-  <table class="w3-table w3-striped w3-bordered">
-    <thead>
-      <tr>
-        <th><h4><strong>Agricultura</strong></h4></th>
-        <th><h4><strong>Acuicultura</strong></h4></th>
-        <th><h4><strong>Lechera</strong></h4></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Decisión de riego</td>
-        <td>Estación pluviometrica</td>
-        <td>VACAS</td>
-      </tr>
-      <tr>
-        <td>Perfil de humedad</td>
-        <td>Puertos cerrados (VIENTO)</td>
-        <td>VACAS</td>
-      </tr>
-      <tr>
-        <td>Control evapotranspiración</td>
-        <td>Parametros acui... ONLINE</td>
-        <td>VACAS</td>
-      </tr>
-            <tr>
-        <td>Control Heladas</td>
-        <td>Acuiculturaa</td>
-        <td>VACAS</td>
-      </tr>
-    </tbody>
-  </table>
+        <br><br><br>   
+         <center><h2>¿QUE ES CLIMATIX?</h2></center>
+<div class="nosotros w3-container">
+       
+
+  <ol id="lista2" class="lista2">
+    <li><h6><strong>Desarrollamos soluciones tecnológicas para la agroindustria</strong></h6></li>
+    <li><h6><strong>Mejoramos tu decisión de riego (Evapotranspiración)</strong></h6></li>
+    <li><h6><strong>Mayor eficiencia hídrica y energética</strong></h6></li>
+    <li><h6><strong>Controlamos el balance hídrico de tus cultivos</strong></h6></li>
+    <li><h6><strong>Incrementamos la productividad de tu negocio</strong></h6></li>
+    <li><h6><strong>Evitamos pérdidas por eventos de Heladas</strong></h6></li>
+    <li><h6><strong>Reducimos tus tiempos de análisis</strong></h6></li>
+</ol>
+<div class="nosotroImagen">
+<img src="../img/grafico.jpg">
 </div>
+</div>
+
 <div class="contenedor">
                 <center><h2>¿COMO FUNCIONA?</h2></center>
                 <p>Nuestras estaciones CLIMATIX han sido desarrolladas con dispositivos hardware de alta precisión para obtener en TIEMPO REAL múltiples parámetros del clima, suelo, plantas e irrigación del cultivo, los que son procesados e interpretados en nuestra plataforma web mediante complejos algoritmos a fin de obtener indicadores, reportes y alertas de manera sencilla y desde cualquier parte.</p>
@@ -232,7 +233,7 @@ input[type=submit]:hover {
                         <h4>Colun</h4>
                     </div>
                     <div class="info-pet">
-                        <img src="../img/ventisqueros.jpg" alt="">
+                        <img src="../img/ventisqueros.png" alt="">
                         <h4>Ventisqueros</h4>
                     </div>
                     <div class="info-pet">
@@ -241,7 +242,7 @@ input[type=submit]:hover {
                     </div>
 
                        <div class="info-pet">
-                        <img src="../img/agrollanquihue.png" alt="">
+                        <img src="../img/acuafood.png" alt="">
                         <h4>Agrollanquihue</h4>
                     </div>
                 </div>
@@ -259,16 +260,16 @@ input[type=submit]:hover {
 <div class="contacto">
   <form action="#">
     <label for="fname">Nombre Completo</label>
-    <input type="text" id="fname" name="firstname" placeholder="Ingrese su Nombre">
+    <input type="text" id="fname" name="nombre" placeholder="Ingrese su Nombre">
 
     <label for="lname">Correo Electronico</label>
-    <input type="text" id="lname" name="lastname" placeholder="Ingrese su Correo">
+    <input type="text" id="lname" name="correo" placeholder="Ingrese su Correo">
 
     <label for="country">Telefono</label>
-    <input type="text" id="lname" name="lastname" placeholder="Ingrese su Telefono">
+    <input type="text" id="lname" name="telefono" placeholder="Ingrese su Telefono">
     
     <label for="country">Mensaje</label>
-    <input type="text" id="lname" name="lastname" placeholder="Ingrese su consulta">
+    <input type="text" id="lname" name="mensaje" placeholder="Ingrese su consulta">
   
     <input type="submit" value="Enviar">
   </form>

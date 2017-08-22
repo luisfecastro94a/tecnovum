@@ -53,38 +53,141 @@ footer .contenedor {
     padding-bottom: 25px;
 }
 
-/*estilo para la banner de Inicio*/
+
+/*estilo para la banner de Inicio
 .banner {
     width: 100%;
     height: 700px;
     border: 0px solid;
-    margin:auto;
+    margin:auto;*/
 
-/*esta propiedad permite decir cuanto va a ser el tamaño del fondo img*/
-    background-size: 100% 100%;
-/*primero nombre de la animacion, segundo cuanto dura y tercero cuantas veces se repetira*/
+/*esta propiedad permite decir cuanto va a ser el tamaño del fondo img
+    background-size: 100% 100%;*/
+/*primero nombre de la animacion, segundo cuanto dura y tercero cuantas veces se repetira
     animation:banner 10s infinite;
-}
+}*/
 
 /*los keyframes son las paradas que va a tener la animacion*/
-@keyframes banner {
+/*@keyframes banner {*/
     /*desde el 0 al 30 es una imagen*/
-    0% , 30%{
+    /*0% , 30%{
     background-image: url("../img/maquina.jpg");
-    }
+    }*/
     /*del 35 al 65 esta la otra imagen*/
-    35%, 65%{
+/*    35%, 65%{
      background-image: url("../img/riego.jpg");   
     }
     70%, 100%{
     background-image: url("../img/arandanos.jpg");
     }
-}
+}*/
 
-.banner h2 {
+/*.banner h2 {
     font-size: 58px;
     margin: auto;
+}*/
+.nosotros{
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
 }
+.nosotros h2{
+    margin-bottom: 30px;
+}
+.nosotroImagen{
+    display: inline-block;
+    padding-top: 30px;
+    margin-top: 2px;
+    margin-bottom: 400px;
+}
+.nosotroImagen img{
+    height: 430px;
+    width: 650px;
+}
+/*
+
+@media (min-width:480px) {
+    .nosotros {
+        width: 50%;
+    }
+}
+
+@media (min-width:1024px) {
+    .nosotros {
+        width: auto;
+    }
+}
+@media (min-width:480px) {
+    .nosotroImagen img{
+        width: 100%;
+    }
+}
+
+@media (min-width:1024px) {
+    .nosotroImagen img{
+        width: auto;
+    }
+}
+*/
+/*listas*/
+.lista2 {
+    counter-reset: li; 
+    list-style: none;
+    padding: 20px;
+    margin-bottom: 4em;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    width: 50%;
+}
+
+.lista2 ol {
+    margin: 0 0 0 2em; 
+}
+
+.lista2 li{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    *padding: .4em;
+    margin: .5em 0;
+    background: #ddd;
+    color: #444;
+    text-decoration: none;
+    border-radius: .3em;
+    transition: all .3s ease-out;   
+}
+
+.lista2 li:hover{
+    background: #eee;
+}
+
+.lista2 li:hover:before{
+    transform: rotate(360deg);  
+}
+
+.lista2 li:before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute; 
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: #87ceeb;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid #fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    transition: all .3s ease-out;
+}
+
+
+
+/*fin de las listas*/
 
 .copy {
     font-size: 20px;
